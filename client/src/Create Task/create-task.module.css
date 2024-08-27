@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.create_task_container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  margin-top: 100px;
+  margin-left: 120px;
+}
+
+.create_task_container .fields_wrapper {
+  border-color: white;
+  border-left: 9px solid;
+  padding-left: 40px;
+}
+
+.fields_wrapper .field_container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.field_container .text_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.text_container .primary_text {
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  font-size: 80px;
+  margin: 0px;
+  padding: 0px;
+  height: min-content;
+}
+
+.text_container .secondary_text {
+  font-family: "JetBrains Mono";
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0px;
+  padding: 0px;
+  height: fit-content;
+}
+
+.create_task_container .name_text_input {
+  font-family: "JetBrains Mono";
+  font-size: 45px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 30vw;
+  height: 60px;
+  margin-left: 30px;
+  resize: none;
+  text-wrap: wrap;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-bottom: 2px solid white;
+}
+.create_task_container .description_text_input {
+  font-family: "JetBrains Mono";
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 30vw;
+  height: 50px;
+  margin-left: 30px;
+  resize: none;
+  text-wrap: wrap;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-bottom: 2px solid white;
+}
+
+.create_task_container .add_task_button_wrapper {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.add_task_button_wrapper .add_task_button {
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+  width: 30vw;
+  resize: none;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  padding-bottom: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.add_task_button_wrapper .loading_text {
+  font-family: "JetBrains Mono";
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}

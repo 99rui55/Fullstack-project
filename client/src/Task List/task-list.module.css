@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.task_list_container {
+  margin-top: 50px;
+  margin-left: 70px;
+  width: 70vw;
+  max-width: 70vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-right: 20px;
+}
+.task_list_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.task_list_container::-webkit-scrollbar-track {
+  background-color: rgba(255, 166, 0, 0);
+}
+
+.task_list_container::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  height: 10px;
+  cursor: pointer;
+}
+
+.task_list_container .task_card {
+  width: 45%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsla(136, 100%, 81%, 0.388);
+  border-radius: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-block: 10px;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.task_card .task_name {
+  text-wrap: wrap;
+  word-break: break-all;
+  font-family: "JetBrains Mono";
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: 3px solid white;
+  overflow-y: auto;
+  max-height: 30%;
+  width: 90%;
+}
+
+.task_name::-webkit-scrollbar {
+  width: 12px;
+}
+
+.task_name::-webkit-scrollbar-track {
+  background-color: rgba(255, 166, 0, 0);
+}
+
+.task_name::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  height: 10px;
+  cursor: pointer;
+}
+
+.task_card .task_description {
+  text-wrap: wrap;
+  width: 90%;
+  height: 40%;
+  word-break: break-all;
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+  margin-left: 15px;
+  font-size: 25px;
+  color: white;
+  overflow-y: auto;
+}
+
+.task_description::-webkit-scrollbar {
+  width: 12px;
+}
+
+.task_description::-webkit-scrollbar-track {
+  background-color: rgba(255, 166, 0, 0);
+}
+
+.task_description::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  height: 10px;
+  cursor: pointer;
+}
+
+.task_card .buttons_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: end;
+  height: 20%;
+  margin-top: auto;
+  width: 100%;
+  margin-left: 15px;
+  padding-bottom: 15px;
+}
+
+.buttons_container .trash_can {
+  background-color: rgb(42, 42, 42); /* White color for the mask */
+  -webkit-mask: url("../assets/images/trash_can.png") no-repeat center / contain; /* For WebKit-based browsers */
+  mask: url("../assets/images/trash_can.png") no-repeat center / contain; /* Standard syntax */
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.trash_can:hover {
+  background-color: rgb(233, 255, 235); /* White color for the mask */
+}
+
+.buttons_container .mark_finished {
+  background-color: rgb(42, 42, 42); /* White color for the mask */
+  -webkit-mask: url("../assets/images/check.png") no-repeat center / contain; /* For WebKit-based browsers */
+  mask: url("../assets/images/check.png") no-repeat center / contain; /* Standard syntax */
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.mark_finished:hover {
+  background-color: rgb(97, 255, 113); /* White color for the mask */
+}
+
+.buttons_container .mark_unfinished {
+  background-color: rgb(42, 42, 42); /* White color for the mask */
+  -webkit-mask: url("../assets/images/close.png") no-repeat center / contain; /* For WebKit-based browsers */
+  mask: url("../assets/images/close.png") no-repeat center / contain; /* Standard syntax */
+  background-position: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.mark_unfinished:hover {
+  background-color: rgb(223, 65, 57); /* White color for the mask */
+}
+
+.task_list_container .no_tasks_text {
+  font-family: "JetBrains Mono";
+  font-weight: 800;
+  font-size: 40px;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}

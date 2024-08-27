@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e12a1cc2.css",
+    "main.js": "/static/js/main.e8a9ce33.js",
+    "static/media/tasks.jpg": "/static/media/tasks.fb9bd4985b6f5c6259f2.jpg",
+    "static/media/trash_can.png": "/static/media/trash_can.a6fd29509719f079bfd7.png",
+    "static/media/check.png": "/static/media/check.64925ab4eeb4f622f9a3.png",
+    "index.html": "/index.html",
+    "main.e12a1cc2.css.map": "/static/css/main.e12a1cc2.css.map",
+    "main.e8a9ce33.js.map": "/static/js/main.e8a9ce33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e12a1cc2.css",
+    "static/js/main.e8a9ce33.js"
+  ]
+}

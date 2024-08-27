@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+.screen {
+  background-image: linear-gradient(
+      45deg,
+      hsla(197, 63%, 16%, 0.95),
+      hsla(155, 80%, 56%, 0.87)
+    ),
+    url("../assets/images/tasks.jpg");
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.screen .headline_container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  margin-top: 100px;
+  margin-left: 12vw;
+  padding-left: 40px;
+  border-color: white;
+  border-left: 9px solid;
+}
+
+.headline_container .head_text {
+  font-family: "JetBrains Mono";
+  font-weight: 800;
+  font-size: 100px;
+  text-wrap: nowrap;
+}
+
+.screen .login_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10vh;
+  margin-left: 12vw;
+}
+
+.screen .login_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+
+.login_container .field_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 20px;
+}
+
+.login_container .login_text {
+  text-decoration: none;
+  color: white;
+  font-family: "JetBrains Mono";
+  font-size: 75px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.login_container .login_field {
+  font-family: "JetBrains Mono";
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  width: 30vw;
+  height: 50px;
+  resize: none;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.login_wrapper .login_button {
+  font-family: "JetBrains Mono";
+  font-weight: 700;
+  font-size: 65px;
+  color: rgb(255, 255, 255);
+  width: 30vw;
+  resize: none;
+  text-wrap: nowrap;
+  background-color: transparent;
+  border: none;
+  overflow: auto;
+  outline: none;
+  padding-bottom: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
