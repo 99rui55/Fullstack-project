@@ -56,8 +56,6 @@ export const createTask = async (req: Request, res: Response) => {
       is_finished,
     });
 
-    console.log(task_name, task_description);
-
     // Save the task to the database
     await newTask.save();
 
